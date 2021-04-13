@@ -1,0 +1,30 @@
+.background-search {
+  background-color: rgb(255, 241, 89);
+  padding: 60px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+}
+
+.makeStyles-root-13 {
+  width: 600px !important;
+  background-color: white;
+}
+.search-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .MuiPaper-root,
+  .background-search {
+    max-width: 300px;
+  }
+  .background-search {
+    padding: 30px;
+  }
+}
