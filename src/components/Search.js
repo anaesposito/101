@@ -7,7 +7,7 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import "./Search.scss";
 
-const Search = ({ onClick, onChange, searchValue, onSubmit }) => {
+const Search = ({ className, onClick, onChange, searchValue, onSubmit }) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       padding: "2px 4px",
@@ -32,7 +32,7 @@ const Search = ({ onClick, onChange, searchValue, onSubmit }) => {
 
   return (
     <div className="search-content">
-      <div className="background-search">
+      <div className={className}>
         <form onSubmit={onSubmit}>
           <Paper className={classes.root}>
             <InputBase

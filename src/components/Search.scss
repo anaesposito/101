@@ -18,6 +18,9 @@
   justify-content: center;
   align-content: center;
 }
+.MuiPaper-rounded {
+  border-radius: 0px !important;
+}
 
 @media (max-width: 767.98px) {
   .MuiPaper-root,

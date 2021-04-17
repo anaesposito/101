@@ -1,0 +1,18 @@
+.nav-header {
+  background-color: rgb(255, 241, 89);
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+.nav-search {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.logo {
+  width: 100px;
+  height: auto;
+  justify-content: space-evenly;
+  align-self: center;
+}
