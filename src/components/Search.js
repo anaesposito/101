@@ -7,7 +7,7 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import "./Search.scss";
 
-const Search = ({ onChange, searchValue }) => {
+const Search = ({ onClick, onChange, searchValue, onSubmit }) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       padding: "2px 4px",
@@ -33,7 +33,7 @@ const Search = ({ onChange, searchValue }) => {
   return (
     <div className="search-content">
       <div className="background-search">
-        <form>
+        <form onSubmit={onSubmit}>
           <Paper className={classes.root}>
             <InputBase
               onChange={onChange}
@@ -51,6 +51,7 @@ const Search = ({ onChange, searchValue }) => {
             ></IconButton>
             <Divider className={classes.divider} orientation="vertical" />
             <IconButton
+              onClick={onClick}
               color="primary"
               className={classes.iconButton}
               aria-label="directions"
