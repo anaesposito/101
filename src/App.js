@@ -11,9 +11,12 @@ const App = () => {
   const [productDetails, setProductDetails] = useState(false);
   const [userSearch, setUserSearch] = useState("");
   const [seeMore, setSeeMore] = useState("");
+const [productId, setProductId] = useState("")
+
 
   const handleClickSeeMore = () => {
-    setSeeMore("see-more");
+    setSeeMore(productId);
+    
   };
 
   const handleSubmit = (e) => {
@@ -65,6 +68,7 @@ const App = () => {
       )}
       <section className="search-results">
         {result.map((part) => (
+
           <Article
             key={part.id}
             title={part.title}
